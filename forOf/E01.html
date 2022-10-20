@@ -8,12 +8,19 @@
     */
 
     //ENTRADA
-
-
+    let precoKgArroz = [3.90, 4.80, 5.75, 6.99, 7.00, 4.99, 5.19];
+    
     //PROCESSAMENTO
+    let soma = 0;
+    for (let arroz of precoKgArroz) {
+        soma = soma + arroz;
+    }
 
-
+    const media = soma / precoKgArroz.length;
+    const maior = precoKgArroz.sort((a,b) => b-a)[0];
+    const menor = precoKgArroz.sort((a,b) => a-b)[0];
     //SAÍDA
-
-
+    alert(`o maior numero é ${maior}`)
+    alert(`o menor numero é ${menor}`)
+    alert(`a media é ${media.toFixed(2)}`)
 </script>

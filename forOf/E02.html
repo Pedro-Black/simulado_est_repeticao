@@ -8,12 +8,15 @@
     */
 
     //ENTRADA
-
-
+    let nomePessoas = ["Eduardo da Silva", "Eduardo Montandon", "Lucas Eduardo", "José da Silva", "Rafael Gonçalves"];
+    let silvas = [];
     //PROCESSAMENTO
-
-
+    for (let pessoas of nomePessoas) {
+        if (pessoas.indexOf("Silva") >= 0) {
+            silvas.push(pessoas)
+        }
+    }
     //SAÍDA
-
+    document.writ(`decendentes da familia${silvas} <br> numero de dencendentes ${nomePessoas.length}`)
 
 </script>

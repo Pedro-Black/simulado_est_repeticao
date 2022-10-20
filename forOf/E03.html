@@ -8,10 +8,25 @@
     */
 
     //ENTRADA
-
-
+    let listaLivros = ["A Arte da Guerra", "Sistemas Inteligentes", "Introdução a Programação com JS", "1984", "Use a cabeça: JS"];
+    let tecnicos = [];
+    let romance = []; 
+    let livro1 = prompt("Qual é o gênero do primeiro livro?:").toUpperCase()
+    let livro2 = prompt("Qual é o gênero do segundo livro?:").toUpperCase()
+    let livro3 = prompt("Qual é o gênero do terceiro livro?:").toUpperCase()
+    let livro4 = prompt("Qual é o gênero do quarto livro?:").toUpperCase()
+    let livro5 = prompt("Qual é o gênero do quinto livro?:").toUpperCase()
     //PROCESSAMENTO
-
+    for (let livros of listaLivros) {
+        switch (livros) {
+            case "R":
+                romance.push(livros)
+                break;
+            default:
+                tecnicos.push(livros)
+                break;
+        }
+ }
 
     //SAÍDA
 
